@@ -74,15 +74,24 @@ img {
 }
 
 .flex-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .flex-top {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-align-items: flex-start; /* Safari */
-    align-items:         flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
 }
 
 
@@ -100,8 +109,12 @@ img {
 
 .other-work .work {
     height: 200px;
-    display: flex;
-    align-items: flex-end;
+    display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 1em;
     color: #fff;
 }
