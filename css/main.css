@@ -24,13 +24,28 @@ body.home {
 }
 
 .navbar-default .navbar-brand {
-    color: #fff;
+    color: #1f5069;
     text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #fff;
+  color: #1f5069;
 }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #1f5069;
+    color: #fff;
+}
+
+.home .navbar-default .navbar-brand, .home .navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .btn {
     border-radius: 0;
@@ -64,9 +79,70 @@ body.home {
     align-items: center;
 }
 
+.flex-top {
+    display: flex;
+    -webkit-align-items: flex-start; /* Safari */
+    align-items:         flex-start;
+}
+
+
+.screens img {
+    margin-right: 1em;
+}
+
+.screens img::last-of-type {
+    margin-right: 0;
+}
+
+.other-work {
+    margin-bottom: 2em;
+}
+
+.other-work .work {
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    padding: 1em;
+    color: #fff;
+}
+
+.work h3 {
+    margin-bottom: 0;
+}
+
+.work .description {
+    z-index: 2;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-green::after {
+    background-color: rgba(0,255,0,0.2);
+}
+.overlay-pink::after {
+    background-color: rgba(255,0,0,0.2);
+}
+.overlay-grey::after {
+    background-color: rgba(0,0,0,0.2);
+}
+
 footer {
     background-color: #1f5069;
     padding: 3em 0 2em;
+}
+
+.home footer {
     position: absolute;
     bottom: 0;
     width: 100%;
